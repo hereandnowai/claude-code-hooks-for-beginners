@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+
+  // The hook scripts live under .claude/, which Pylance excludes by default
+  // ("**/.*"). That leaves them analysed as stray open files instead of project
+  // files, and Pylance can show a bogus red squiggle because of it.
+  // These three lines make them ordinary project files and keep every lesson
+  // screen free of red underlines.
+  "python.analysis.include": [".claude/hooks"],
+  "python.analysis.exclude": ["**/node_modules", "**/__pycache__", "**/.git"],
+  "python.analysis.typeCheckingMode": "off"
+}

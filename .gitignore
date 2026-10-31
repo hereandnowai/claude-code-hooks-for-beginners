@@ -1,0 +1,18 @@
+# Files the hooks create while learners play. Safe to delete at any time.
+claude-diary.md
+hook-log.txt
+scoreboard.json
+report-card.md
+playground/*
+!playground/README.md
+!playground/scratch.txt
+!playground/*.py
+__pycache__/
+.stamp-pending.json
+.lint-clean.json
+.mystery-progress.json
+.ruff_cache/
+.claude/settings.local.json
+
+# HERE AND NOW AI standard
+social-media-content/
